@@ -2,7 +2,7 @@
     "name": "Backup24",
     "description": "A nice plugin that will take backups of the framework every 24h!",
     "version": "1.0.0",
-    "icon": "",
+    "icon": "https://raw.githubusercontent.com/MythicalLTD/FrameworkBackup24/refs/heads/main/icon.png",
     "homepage": "https://market.mythicalsystems.xyz/resources/resource/5/",
     "require": [
         "MythicalSystemsFramework",

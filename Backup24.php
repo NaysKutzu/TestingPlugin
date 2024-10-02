@@ -1,23 +1,10 @@
 <?php
-
-/*
- * This file is part of MythicalSystemsFramework.
- * Please view the LICENSE file that was distributed with this source code.
- *
- * (c) MythicalSystems <mythicalsystems.xyz> - All rights reserved
- * (c) NaysKutzu <nayskutzu.xyz> - All rights reserved
- * (c) Cassian Gherman <nayskutzu.xyz> - All rights reserved
- *
- * You should have received a copy of the MIT License
- * along with this program. If not, see <https://opensource.org/licenses/MIT>.
- */
-
 use MythicalSystemsFramework\Kernel\Logger;
 use MythicalSystemsFramework\Kernel\LoggerTypes;
 use MythicalSystemsFramework\Kernel\LoggerLevels;
 use MythicalSystemsFramework\Plugins\PluginBuilder;
 
-class Core implements PluginBuilder
+class Backup24 implements PluginBuilder
 {
     public function Main(): void
     {
@@ -30,11 +17,11 @@ class Core implements PluginBuilder
 
     public function onInstall(): void
     {
-        Logger::log(LoggerLevels::INFO, LoggerTypes::PLUGIN, 'Core plugin installed');
+        Logger::log(LoggerLevels::INFO, LoggerTypes::PLUGIN, 'Backup24 plugin installed');
     }
 
     public function onUninstall(): void
     {
-        Logger::log(LoggerLevels::INFO, LoggerTypes::PLUGIN, 'Core plugin uninstalled');
+        Logger::log(LoggerLevels::INFO, LoggerTypes::PLUGIN, 'Backup24 plugin uninstalled');
     }
 }
