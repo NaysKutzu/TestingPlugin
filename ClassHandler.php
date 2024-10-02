@@ -61,7 +61,7 @@ class ClassHandler
     {
         $mysql = new MySQL();
         $conn = $mysql->connectMYSQLI();
-        $conn->query('UPDATE `' . self::TABLE_NAME . '` SET `last_backup` = CURRENT_TIMESTAMP WHERE `id` = 1');
+        $conn->query('UPDATE `' . self::TABLE_NAME . '` SET `' . self::$columns[1] . '` = CURRENT_TIMESTAMP WHERE `' . self::$columns[0] . '` = 1');
     }
 
     /**
@@ -100,9 +100,7 @@ class ClassHandler
         if (($currentTime - $lastBackupTime) >= 86400) {
             return true;
         }
-
         return false;
-
     }
 
     /**

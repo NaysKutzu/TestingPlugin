@@ -19,28 +19,8 @@ use MythicalSystemsFramework\Plugins\PluginBuilder;
 
 class Backup24 implements PluginBuilder
 {
-    public function Main(): void
-    {
-        // DO nothing since you don't need to do something :)
-    }
-
-    public function Event(MythicalSystemsFramework\Plugins\PluginEvent $eventHandler): void
-    {
-        require __DIR__ . '/ClassHandler.php';
-
-        // Load routes
-        $eventHandler->on('app.onAppLoad', function ($router, $renderer) {
-            /**
-             * Routes for the Backup24 plugin.
-             */
-            $router->add('/addons/backup24/info', function () {
-                global $renderer;
-
-                exit(ClassHandler::getLastBackup() . ' | ' . ClassHandler::getCurrentSystemTime() . ' | Is it time for backup? ' . ClassHandler::isTimeForBackup());
-            });
-        });
-    }
-
+    public function Main(): void {}
+    public function Event(MythicalSystemsFramework\Plugins\PluginEvent $eventHandler): void {}
     public function onInstall(): void
     {
         require __DIR__ . '/ClassHandler.php';
