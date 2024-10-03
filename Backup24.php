@@ -19,8 +19,14 @@ use MythicalSystemsFramework\Plugins\PluginBuilder;
 
 class Backup24 implements PluginBuilder
 {
-    public function Main(): void {}
-    public function Event(MythicalSystemsFramework\Plugins\PluginEvent $eventHandler): void {}
+    public function Main(): void
+    {
+    }
+
+    public function Event(MythicalSystemsFramework\Plugins\PluginEvent $eventHandler): void
+    {
+    }
+
     public function onInstall(): void
     {
         require __DIR__ . '/ClassHandler.php';

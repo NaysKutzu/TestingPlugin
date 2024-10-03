@@ -100,6 +100,7 @@ class ClassHandler
         if (($currentTime - $lastBackupTime) >= 86400) {
             return true;
         }
+
         return false;
     }
 
