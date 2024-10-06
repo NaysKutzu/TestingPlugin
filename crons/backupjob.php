@@ -12,5 +12,3 @@
  * along with this program. If not, see <https://opensource.org/licenses/MIT>.
  */
 
-require __DIR__ . '/../ClassHandler.php';
-ClassHandler::takeBackup();

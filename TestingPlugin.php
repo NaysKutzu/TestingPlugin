@@ -17,10 +17,11 @@ use MythicalSystemsFramework\Kernel\LoggerTypes;
 use MythicalSystemsFramework\Kernel\LoggerLevels;
 use MythicalSystemsFramework\Plugins\PluginBuilder;
 
-class Backup24 implements PluginBuilder
+class TestingPlugin implements PluginBuilder
 {
     public function Main(): void
     {
+        
     }
 
     public function Event(MythicalSystemsFramework\Plugins\PluginEvent $eventHandler): void
